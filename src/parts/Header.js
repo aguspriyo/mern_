@@ -1,7 +1,7 @@
 import "bootstrap";
 import Button from "elements/Button";
+import { Fade } from "react-reveal";
 import BrandIcon from "./IconText";
-
 
 export default function Header(props) {
   const getNavLinkClass = (path) => {
@@ -9,6 +9,7 @@ export default function Header(props) {
   };
 
   return (
+    <Fade>
     <header className="spacing-sm">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-lg">
@@ -41,5 +42,6 @@ export default function Header(props) {
           </nav>
       </div>
     </header>
+    </Fade>
   );
 }
